@@ -2,6 +2,7 @@ import java.util.Objects;
 import java.util.Scanner;
 
 public class Main {
+
     static Race race = new Race();
 
     public static void main(String[] args) {
@@ -18,8 +19,11 @@ public class Main {
                 }
             } else if(Objects.equals(command, "exit"))
             {
-                System.out.println("Завергаем работу.");
+                System.out.println("Завершаем работу.");
                 break;
+            } else {
+                System.out.println("Комманда не распознана.");
+                command = scanner.nextLine();
             }
         }
     }
